@@ -1,0 +1,27 @@
+{
+    "configurations": [
+        {
+            "name": "stm32",
+            "includePath": [
+                "app",
+                "driver/*",
+                "driver/esp-at",
+                "firmware/cmsis/core",
+                "firmware/cmsis/device",
+                "firmware/driver/inc"
+            ],
+            "defines": [
+                "USE_STDPERIPH_DRIVER",
+                "STM32F10X_MD"
+            ],
+            "compilerPath": "D:/Environment/arm-gnu-toolchain-14.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-gcc.exe",
+            "intelliSenseMode": "windows-gcc-arm",
+            "cStandard": "c99",
+            "cppStandard": "c++11",
+            "browse": {
+                "limitSymbolsToIncludedHeaders": true
+            }
+        }
+    ],
+    "version": 4
+}
