@@ -339,7 +339,7 @@
               <MiscControls></MiscControls>
               <Define>USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>..\app;..\driver;..\firmware\cmsis\core;..\firmware\cmsis\device;..\firmware\driver\inc;..\driver\esp-at</IncludePath>
+              <IncludePath>..\app;..\driver;..\firmware\cmsis\core;..\firmware\cmsis\device;..\firmware\driver\inc;..\driver\esp-at;..\driver\st7735</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -393,6 +393,16 @@
               <FileType>1</FileType>
               <FilePath>..\app\utils.c</FilePath>
             </File>
+            <File>
+              <FileName>board.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\app\board.c</FilePath>
+            </File>
+            <File>
+              <FileName>main.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\app\main.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -427,6 +437,46 @@
               <FileName>delay.h</FileName>
               <FileType>5</FileType>
               <FilePath>..\driver\delay.h</FilePath>
+            </File>
+            <File>
+              <FileName>lcd_spi.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\driver\st7735\lcd_spi.c</FilePath>
+            </File>
+            <File>
+              <FileName>lcd_spi.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\driver\st7735\lcd_spi.h</FilePath>
+            </File>
+            <File>
+              <FileName>st7735.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\driver\st7735\st7735.c</FilePath>
+            </File>
+            <File>
+              <FileName>st7735.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\driver\st7735\st7735.h</FilePath>
+            </File>
+            <File>
+              <FileName>stfonts.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\driver\st7735\stfonts.c</FilePath>
+            </File>
+            <File>
+              <FileName>stfonts.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\driver\st7735\stfonts.h</FilePath>
+            </File>
+            <File>
+              <FileName>rtc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\driver\rtc.c</FilePath>
+            </File>
+            <File>
+              <FileName>rtc.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\driver\rtc.h</FilePath>
             </File>
           </Files>
         </Group>

@@ -1,9 +1,7 @@
 .\objects\st7735.o: ..\driver\st7735\st7735.c
-.\objects\st7735.o: D:\Software\Keil5\ARM\ARMCC\Bin\..\include\stdbool.h
-.\objects\st7735.o: D:\Software\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
-.\objects\st7735.o: D:\Software\Keil5\ARM\ARMCC\Bin\..\include\string.h
 .\objects\st7735.o: ..\firmware\cmsis\device\stm32f10x.h
 .\objects\st7735.o: ..\firmware\cmsis\core\core_cm3.h
+.\objects\st7735.o: D:\Software\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\st7735.o: ..\firmware\cmsis\device\system_stm32f10x.h
 .\objects\st7735.o: ..\firmware\cmsis\device\stm32f10x_conf.h
 .\objects\st7735.o: ..\firmware\driver\inc\stm32f10x_adc.h
@@ -30,7 +28,8 @@
 .\objects\st7735.o: ..\firmware\driver\inc\stm32f10x_usart.h
 .\objects\st7735.o: ..\firmware\driver\inc\stm32f10x_wwdg.h
 .\objects\st7735.o: ..\firmware\driver\inc\misc.h
-.\objects\st7735.o: ..\app\main.h
-.\objects\st7735.o: ..\app\lcd_spi.h
+.\objects\st7735.o: ..\driver\st7735\lcd_spi.h
+.\objects\st7735.o: D:\Software\Keil5\ARM\ARMCC\Bin\..\include\stdbool.h
 .\objects\st7735.o: ..\driver\st7735\st7735.h
 .\objects\st7735.o: ..\driver\st7735\stfonts.h
+.\objects\st7735.o: ..\driver\delay.h

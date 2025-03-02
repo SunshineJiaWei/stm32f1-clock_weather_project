@@ -4,7 +4,7 @@
             "name": "stm32",
             "includePath": [
                 "app",
-                "driver/*",
+                "driver/**",
                 "driver/esp-at",
                 "firmware/cmsis/core",
                 "firmware/cmsis/device",

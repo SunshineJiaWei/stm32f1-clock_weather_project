@@ -17,6 +17,8 @@
         "stm32f10x.h": "c",
         "lcd_spi.h": "c",
         "stimage.h": "c",
-        "stdio.h": "c"
+        "stdio.h": "c",
+        "delay.h": "c",
+        "cstdlib": "c"
     }
 }

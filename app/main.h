@@ -4,6 +4,7 @@
 
 #include <stdint.h>
 
+void board_lowlevel_init(void);
 
 void delay(uint32_t ticks);
 

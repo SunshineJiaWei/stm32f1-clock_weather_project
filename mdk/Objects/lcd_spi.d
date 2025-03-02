@@ -1,9 +1,7 @@
-.\objects\lcd_spi.o: ..\app\lcd_spi.c
-.\objects\lcd_spi.o: D:\Software\Keil5\ARM\ARMCC\Bin\..\include\stdbool.h
-.\objects\lcd_spi.o: D:\Software\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
-.\objects\lcd_spi.o: D:\Software\Keil5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\lcd_spi.o: ..\driver\st7735\lcd_spi.c
 .\objects\lcd_spi.o: ..\firmware\cmsis\device\stm32f10x.h
 .\objects\lcd_spi.o: ..\firmware\cmsis\core\core_cm3.h
+.\objects\lcd_spi.o: D:\Software\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\lcd_spi.o: ..\firmware\cmsis\device\system_stm32f10x.h
 .\objects\lcd_spi.o: ..\firmware\cmsis\device\stm32f10x_conf.h
 .\objects\lcd_spi.o: ..\firmware\driver\inc\stm32f10x_adc.h
@@ -30,4 +28,5 @@
 .\objects\lcd_spi.o: ..\firmware\driver\inc\stm32f10x_usart.h
 .\objects\lcd_spi.o: ..\firmware\driver\inc\stm32f10x_wwdg.h
 .\objects\lcd_spi.o: ..\firmware\driver\inc\misc.h
-.\objects\lcd_spi.o: ..\app\lcd_spi.h
+.\objects\lcd_spi.o: ..\driver\st7735\lcd_spi.h
+.\objects\lcd_spi.o: D:\Software\Keil5\ARM\ARMCC\Bin\..\include\stdbool.h

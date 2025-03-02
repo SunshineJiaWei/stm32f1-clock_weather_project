@@ -33,3 +33,6 @@
 .\objects\main.o: D:\Software\Keil5\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\main.o: ..\app\main.h
 .\objects\main.o: ..\driver\esp-at\esp_at.h
+.\objects\main.o: ..\driver\rtc.h
+.\objects\main.o: ..\driver\st7735\st7735.h
+.\objects\main.o: ..\driver\st7735\stfonts.h
