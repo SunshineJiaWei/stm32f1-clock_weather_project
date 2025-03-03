@@ -403,6 +403,16 @@
               <FileType>5</FileType>
               <FilePath>..\app\main.h</FilePath>
             </File>
+            <File>
+              <FileName>weather.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\app\weather.c</FilePath>
+            </File>
+            <File>
+              <FileName>weather.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\app\weather.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -477,6 +487,21 @@
               <FileName>rtc.h</FileName>
               <FileType>5</FileType>
               <FilePath>..\driver\rtc.h</FilePath>
+            </File>
+            <File>
+              <FileName>timer.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\driver\timer.c</FilePath>
+            </File>
+            <File>
+              <FileName>timer.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\driver\timer.h</FilePath>
+            </File>
+            <File>
+              <FileName>font_time_25.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\driver\st7735\font_time_25.c</FilePath>
             </File>
           </Files>
         </Group>

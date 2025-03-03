@@ -3,6 +3,8 @@
 #include "st7735.h"
 #include "delay.h"
 #include "stfonts.h"
+#include <stddef.h>
+
 
 #define RES_PORT    GPIOB
 #define RES_PIN     GPIO_Pin_0
@@ -253,21 +255,39 @@ void st7735_fill_screen(uint16_t color)
     st7735_fill_rect(0, 0, ST7735_WIDTH, ST7735_HEIGHT, color);
 }
 
+static const uint8_t* st7735_find_font(const st_fonts_t *font, char ch)
+{
+    uint32_t bytes_per_line = (font->width + 7) / 8;
+
+    for(uint32_t i = 0;i < font->count;i ++)
+    {
+        const uint8_t *pcode = font->data + i * (font->height * bytes_per_line + 1);
+        if(*pcode == ch)
+        {
+            return pcode + 1;
+        }
+    }
+	
+    return NULL;
+}
+
 void st7735_write_char(uint16_t x, uint16_t y, char ch, st_fonts_t *font, uint16_t color, uint16_t bgcolor)
 {
     st7735_select();
 
     st7735_set_window(x, y, x + font->width - 1, y + font->height - 1);
 
-    uint8_t byte_per_line = (font->width + 7) / 8; // 向上取整，判断每行显示多少个字节
+    uint8_t bytes_per_line = (font->width + 7) / 8; // 向上取整，判断每行显示多少个字节
+
     uint8_t *pbuffer = gram_buffer;
+    const uint8_t *fcode = st7735_find_font(font, ch);
     for(uint8_t y = 0;y < font->height;y ++) // 遍历y轴/行
     {
-       const uint8_t *pcode = font->data + ch * font->height * byte_per_line + y * byte_per_line; // 定位到具体行的第几个字节
+       const uint8_t *pcode = fcode + y * bytes_per_line; // 定位到具体行的第几个字节
        for(uint8_t x = 0;x < font->width;x ++) // 遍历x轴/列,每行的像素点
        {
-            uint8_t byte = pcode[x >> 3]; // 渲染每行的第几个字节，汉字有两个字节，相当于*(pcode + x / 8)
-            if((byte << (x & 0x7)) & 0x80) // 取出当前bit的值，0填充背景色，1填充前景色
+            uint8_t byte = pcode[x >> 3];   // 渲染每行的第几个字节，汉字有两个字节，相当于*(pcode + x / 8)
+            if((byte << (x & 0x7)) & 0x80)  // 取出当前bit的值，0填充背景色，1填充前景色
             {
                 *pbuffer++ = color >> 8;
                 *pbuffer++ = 0xFF & color;

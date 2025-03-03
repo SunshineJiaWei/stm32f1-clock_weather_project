@@ -1,6 +1,6 @@
 Dependencies for Project 'stm32f103', Target 'project': (DO NOT MODIFY !)
 CompilerVersion: 5060960::V5.06 update 7 (build 960)::.\ARMCC
-F (..\app\main.c)(0x67C3F6B1)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app -I ..\driver -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\esp-at -I ..\driver\st7735-IC:\Users\25150\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+F (..\app\main.c)(0x67C5CCD0)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app -I ..\driver -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\esp-at -I ..\driver\st7735-IC:\Users\25150\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
 I (..\firmware\cmsis\device\stm32f10x.h)(0x61605446)
 I (..\firmware\cmsis\core\core_cm3.h)(0x61605446)
 I (D:\Software\Keil5\ARM\ARMCC\include\stdint.h)(0x6025237E)
@@ -36,7 +36,10 @@ I (..\app\main.h)(0x67C2A8CD)
 I (..\driver\esp-at\esp_at.h)(0x67C17399)
 I (..\driver\rtc.h)(0x67C2A787)
 I (..\driver\st7735\st7735.h)(0x67C3CDC1)
-I (..\driver\st7735\stfonts.h)(0x67C3CBE0)
+I (..\driver\st7735\stfonts.h)(0x67C5C265)
+I (..\driver\timer.h)(0x67C46ADD)
+I (..\driver\delay.h)(0x67C1726F)
+I (..\app\weather.h)(0x67C5CA50)
 F (..\app\utils.c)(0x67BDC791)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app -I ..\driver -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\esp-at -I ..\driver\st7735-IC:\Users\25150\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\utils.o --omf_browse .\objects\utils.crf --depend .\objects\utils.d)
 I (D:\Software\Keil5\ARM\ARMCC\include\stdint.h)(0x6025237E)
 I (..\firmware\cmsis\device\stm32f10x.h)(0x61605446)
@@ -66,7 +69,7 @@ I (..\firmware\driver\inc\stm32f10x_tim.h)(0x61605446)
 I (..\firmware\driver\inc\stm32f10x_usart.h)(0x61605446)
 I (..\firmware\driver\inc\stm32f10x_wwdg.h)(0x61605446)
 I (..\firmware\driver\inc\misc.h)(0x61605446)
-F (..\app\board.c)(0x67C3D784)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app -I ..\driver -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\esp-at -I ..\driver\st7735-IC:\Users\25150\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\board.o --omf_browse .\objects\board.crf --depend .\objects\board.d)
+F (..\app\board.c)(0x67C5C8E0)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app -I ..\driver -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\esp-at -I ..\driver\st7735-IC:\Users\25150\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\board.o --omf_browse .\objects\board.crf --depend .\objects\board.d)
 I (..\firmware\cmsis\device\stm32f10x.h)(0x61605446)
 I (..\firmware\cmsis\core\core_cm3.h)(0x61605446)
 I (D:\Software\Keil5\ARM\ARMCC\include\stdint.h)(0x6025237E)
@@ -96,7 +99,13 @@ I (..\firmware\driver\inc\stm32f10x_usart.h)(0x61605446)
 I (..\firmware\driver\inc\stm32f10x_wwdg.h)(0x61605446)
 I (..\firmware\driver\inc\misc.h)(0x61605446)
 F (..\app\main.h)(0x67C2A8CD)()
-F (..\driver\esp-at\esp_at.c)(0x67C176DF)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app -I ..\driver -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\esp-at -I ..\driver\st7735-IC:\Users\25150\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\esp_at.o --omf_browse .\objects\esp_at.crf --depend .\objects\esp_at.d)
+F (..\app\weather.c)(0x67BFF24A)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app -I ..\driver -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\esp-at -I ..\driver\st7735-IC:\Users\25150\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\weather.o --omf_browse .\objects\weather.crf --depend .\objects\weather.d)
+I (D:\Software\Keil5\ARM\ARMCC\include\stdbool.h)(0x6025237C)
+I (D:\Software\Keil5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (D:\Software\Keil5\ARM\ARMCC\include\string.h)(0x6025237E)
+I (..\app\weather.h)(0x67C5CA50)
+F (..\app\weather.h)(0x67C5CA50)()
+F (..\driver\esp-at\esp_at.c)(0x67C5C090)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app -I ..\driver -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\esp-at -I ..\driver\st7735-IC:\Users\25150\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\esp_at.o --omf_browse .\objects\esp_at.crf --depend .\objects\esp_at.d)
 I (..\firmware\cmsis\device\stm32f10x.h)(0x61605446)
 I (..\firmware\cmsis\core\core_cm3.h)(0x61605446)
 I (D:\Software\Keil5\ARM\ARMCC\include\stdint.h)(0x6025237E)
@@ -134,7 +143,7 @@ I (D:\Software\Keil5\ARM\ARMCC\include\stdbool.h)(0x6025237C)
 I (..\driver\esp-at\esp_usart.h)(0x67C17430)
 I (..\driver\delay.h)(0x67C1726F)
 F (..\driver\esp-at\esp_at.h)(0x67C17399)()
-F (..\driver\esp-at\esp_usart.c)(0x67C17937)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app -I ..\driver -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\esp-at -I ..\driver\st7735-IC:\Users\25150\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\esp_usart.o --omf_browse .\objects\esp_usart.crf --depend .\objects\esp_usart.d)
+F (..\driver\esp-at\esp_usart.c)(0x67C5BD31)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app -I ..\driver -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\esp-at -I ..\driver\st7735-IC:\Users\25150\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\esp_usart.o --omf_browse .\objects\esp_usart.crf --depend .\objects\esp_usart.d)
 I (..\firmware\cmsis\device\stm32f10x.h)(0x61605446)
 I (..\firmware\cmsis\core\core_cm3.h)(0x61605446)
 I (D:\Software\Keil5\ARM\ARMCC\include\stdint.h)(0x6025237E)
@@ -229,7 +238,7 @@ I (..\firmware\driver\inc\misc.h)(0x61605446)
 I (..\driver\st7735\lcd_spi.h)(0x67C3F666)
 I (D:\Software\Keil5\ARM\ARMCC\include\stdbool.h)(0x6025237C)
 F (..\driver\st7735\lcd_spi.h)(0x67C3F666)()
-F (..\driver\st7735\st7735.c)(0x67C3F67C)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app -I ..\driver -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\esp-at -I ..\driver\st7735-IC:\Users\25150\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\st7735.o --omf_browse .\objects\st7735.crf --depend .\objects\st7735.d)
+F (..\driver\st7735\st7735.c)(0x67C5BB49)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app -I ..\driver -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\esp-at -I ..\driver\st7735-IC:\Users\25150\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\st7735.o --omf_browse .\objects\st7735.crf --depend .\objects\st7735.d)
 I (..\firmware\cmsis\device\stm32f10x.h)(0x61605446)
 I (..\firmware\cmsis\core\core_cm3.h)(0x61605446)
 I (D:\Software\Keil5\ARM\ARMCC\include\stdint.h)(0x6025237E)
@@ -261,10 +270,11 @@ I (..\firmware\driver\inc\misc.h)(0x61605446)
 I (..\driver\st7735\lcd_spi.h)(0x67C3F666)
 I (D:\Software\Keil5\ARM\ARMCC\include\stdbool.h)(0x6025237C)
 I (..\driver\st7735\st7735.h)(0x67C3CDC1)
-I (..\driver\st7735\stfonts.h)(0x67C3CBE0)
+I (..\driver\st7735\stfonts.h)(0x67C5C265)
 I (..\driver\delay.h)(0x67C1726F)
+I (D:\Software\Keil5\ARM\ARMCC\include\stddef.h)(0x6025237E)
 F (..\driver\st7735\st7735.h)(0x67C3CDC1)()
-F (..\driver\st7735\stfonts.c)(0x67C3B524)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app -I ..\driver -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\esp-at -I ..\driver\st7735-IC:\Users\25150\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\stfonts.o --omf_browse .\objects\stfonts.crf --depend .\objects\stfonts.d)
+F (..\driver\st7735\stfonts.c)(0x67C5BBB3)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app -I ..\driver -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\esp-at -I ..\driver\st7735-IC:\Users\25150\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\stfonts.o --omf_browse .\objects\stfonts.crf --depend .\objects\stfonts.d)
 I (..\firmware\cmsis\device\stm32f10x.h)(0x61605446)
 I (..\firmware\cmsis\core\core_cm3.h)(0x61605446)
 I (D:\Software\Keil5\ARM\ARMCC\include\stdint.h)(0x6025237E)
@@ -293,10 +303,10 @@ I (..\firmware\driver\inc\stm32f10x_tim.h)(0x61605446)
 I (..\firmware\driver\inc\stm32f10x_usart.h)(0x61605446)
 I (..\firmware\driver\inc\stm32f10x_wwdg.h)(0x61605446)
 I (..\firmware\driver\inc\misc.h)(0x61605446)
-I (..\driver\st7735\stfonts.h)(0x67C3CBE0)
+I (..\driver\st7735\stfonts.h)(0x67C5C265)
 I (D:\Software\Keil5\ARM\ARMCC\include\stdbool.h)(0x6025237C)
-F (..\driver\st7735\stfonts.h)(0x67C3CBE0)()
-F (..\driver\rtc.c)(0x67C3CC9A)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app -I ..\driver -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\esp-at -I ..\driver\st7735-IC:\Users\25150\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\rtc.o --omf_browse .\objects\rtc.crf --depend .\objects\rtc.d)
+F (..\driver\st7735\stfonts.h)(0x67C5C265)()
+F (..\driver\rtc.c)(0x67C5C97A)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app -I ..\driver -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\esp-at -I ..\driver\st7735-IC:\Users\25150\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\rtc.o --omf_browse .\objects\rtc.crf --depend .\objects\rtc.d)
 I (..\firmware\cmsis\device\stm32f10x.h)(0x61605446)
 I (..\firmware\cmsis\core\core_cm3.h)(0x61605446)
 I (D:\Software\Keil5\ARM\ARMCC\include\stdint.h)(0x6025237E)
@@ -329,6 +339,69 @@ I (..\driver\rtc.h)(0x67C2A787)
 I (D:\Software\Keil5\ARM\ARMCC\include\stdbool.h)(0x6025237C)
 I (D:\Software\Keil5\ARM\ARMCC\include\string.h)(0x6025237E)
 F (..\driver\rtc.h)(0x67C2A787)()
+F (..\driver\timer.c)(0x67C477FA)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app -I ..\driver -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\esp-at -I ..\driver\st7735-IC:\Users\25150\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\timer.o --omf_browse .\objects\timer.crf --depend .\objects\timer.d)
+I (..\firmware\cmsis\device\stm32f10x.h)(0x61605446)
+I (..\firmware\cmsis\core\core_cm3.h)(0x61605446)
+I (D:\Software\Keil5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (..\firmware\cmsis\device\system_stm32f10x.h)(0x61605446)
+I (..\firmware\cmsis\device\stm32f10x_conf.h)(0x61605442)
+I (..\firmware\driver\inc\stm32f10x_adc.h)(0x61605446)
+I (..\firmware\driver\inc\stm32f10x_bkp.h)(0x61605446)
+I (..\firmware\driver\inc\stm32f10x_can.h)(0x61605446)
+I (..\firmware\driver\inc\stm32f10x_cec.h)(0x61605446)
+I (..\firmware\driver\inc\stm32f10x_crc.h)(0x61605446)
+I (..\firmware\driver\inc\stm32f10x_dac.h)(0x61605446)
+I (..\firmware\driver\inc\stm32f10x_dbgmcu.h)(0x61605446)
+I (..\firmware\driver\inc\stm32f10x_dma.h)(0x61605446)
+I (..\firmware\driver\inc\stm32f10x_exti.h)(0x61605446)
+I (..\firmware\driver\inc\stm32f10x_flash.h)(0x61605446)
+I (..\firmware\driver\inc\stm32f10x_fsmc.h)(0x61605446)
+I (..\firmware\driver\inc\stm32f10x_gpio.h)(0x66AA4802)
+I (..\firmware\driver\inc\stm32f10x_i2c.h)(0x61605446)
+I (..\firmware\driver\inc\stm32f10x_iwdg.h)(0x61605446)
+I (..\firmware\driver\inc\stm32f10x_pwr.h)(0x61605446)
+I (..\firmware\driver\inc\stm32f10x_rcc.h)(0x61605446)
+I (..\firmware\driver\inc\stm32f10x_rtc.h)(0x61605446)
+I (..\firmware\driver\inc\stm32f10x_sdio.h)(0x61605446)
+I (..\firmware\driver\inc\stm32f10x_spi.h)(0x61605446)
+I (..\firmware\driver\inc\stm32f10x_tim.h)(0x61605446)
+I (..\firmware\driver\inc\stm32f10x_usart.h)(0x61605446)
+I (..\firmware\driver\inc\stm32f10x_wwdg.h)(0x61605446)
+I (..\firmware\driver\inc\misc.h)(0x61605446)
+I (..\driver\timer.h)(0x67C46ADD)
+I (D:\Software\Keil5\ARM\ARMCC\include\stdbool.h)(0x6025237C)
+F (..\driver\timer.h)(0x67C46ADD)()
+F (..\driver\st7735\font_time_25.c)(0x67C5B9B6)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app -I ..\driver -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\esp-at -I ..\driver\st7735-IC:\Users\25150\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\font_time_25.o --omf_browse .\objects\font_time_25.crf --depend .\objects\font_time_25.d)
+I (..\firmware\cmsis\device\stm32f10x.h)(0x61605446)
+I (..\firmware\cmsis\core\core_cm3.h)(0x61605446)
+I (D:\Software\Keil5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (..\firmware\cmsis\device\system_stm32f10x.h)(0x61605446)
+I (..\firmware\cmsis\device\stm32f10x_conf.h)(0x61605442)
+I (..\firmware\driver\inc\stm32f10x_adc.h)(0x61605446)
+I (..\firmware\driver\inc\stm32f10x_bkp.h)(0x61605446)
+I (..\firmware\driver\inc\stm32f10x_can.h)(0x61605446)
+I (..\firmware\driver\inc\stm32f10x_cec.h)(0x61605446)
+I (..\firmware\driver\inc\stm32f10x_crc.h)(0x61605446)
+I (..\firmware\driver\inc\stm32f10x_dac.h)(0x61605446)
+I (..\firmware\driver\inc\stm32f10x_dbgmcu.h)(0x61605446)
+I (..\firmware\driver\inc\stm32f10x_dma.h)(0x61605446)
+I (..\firmware\driver\inc\stm32f10x_exti.h)(0x61605446)
+I (..\firmware\driver\inc\stm32f10x_flash.h)(0x61605446)
+I (..\firmware\driver\inc\stm32f10x_fsmc.h)(0x61605446)
+I (..\firmware\driver\inc\stm32f10x_gpio.h)(0x66AA4802)
+I (..\firmware\driver\inc\stm32f10x_i2c.h)(0x61605446)
+I (..\firmware\driver\inc\stm32f10x_iwdg.h)(0x61605446)
+I (..\firmware\driver\inc\stm32f10x_pwr.h)(0x61605446)
+I (..\firmware\driver\inc\stm32f10x_rcc.h)(0x61605446)
+I (..\firmware\driver\inc\stm32f10x_rtc.h)(0x61605446)
+I (..\firmware\driver\inc\stm32f10x_sdio.h)(0x61605446)
+I (..\firmware\driver\inc\stm32f10x_spi.h)(0x61605446)
+I (..\firmware\driver\inc\stm32f10x_tim.h)(0x61605446)
+I (..\firmware\driver\inc\stm32f10x_usart.h)(0x61605446)
+I (..\firmware\driver\inc\stm32f10x_wwdg.h)(0x61605446)
+I (..\firmware\driver\inc\misc.h)(0x61605446)
+I (..\driver\st7735\stfonts.h)(0x67C5C265)
+I (D:\Software\Keil5\ARM\ARMCC\include\stdbool.h)(0x6025237C)
 F (..\firmware\cmsis\device\startup_stm32f10x_md.s)(0x61605446)(--cpu Cortex-M3 -g --apcs=interwork --pd "__MICROLIB SETA 1"-IC:\Users\25150\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include--pd "__UVISION_VERSION SETA 536" --pd "STM32F10X_MD SETA 1"--list .\listings\startup_stm32f10x_md.lst --xref -o .\objects\startup_stm32f10x_md.o --depend .\objects\startup_stm32f10x_md.d)
 F (..\firmware\cmsis\core\core_cm3.c)(0x61605446)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\app -I ..\driver -I ..\firmware\cmsis\core -I ..\firmware\cmsis\device -I ..\firmware\driver\inc -I ..\driver\esp-at -I ..\driver\st7735-IC:\Users\25150\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\core_cm3.o --omf_browse .\objects\core_cm3.crf --depend .\objects\core_cm3.d)
 I (D:\Software\Keil5\ARM\ARMCC\include\stdint.h)(0x6025237E)

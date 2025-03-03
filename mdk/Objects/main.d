@@ -36,3 +36,6 @@
 .\objects\main.o: ..\driver\rtc.h
 .\objects\main.o: ..\driver\st7735\st7735.h
 .\objects\main.o: ..\driver\st7735\stfonts.h
+.\objects\main.o: ..\driver\timer.h
+.\objects\main.o: ..\driver\delay.h
+.\objects\main.o: ..\app\weather.h

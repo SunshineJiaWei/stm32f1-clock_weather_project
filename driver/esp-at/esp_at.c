@@ -103,8 +103,6 @@ bool esp_at_reset(void)
     return true;
 }
 
-
-
 bool esp_at_init(void)
 {
     esp_usart_init();

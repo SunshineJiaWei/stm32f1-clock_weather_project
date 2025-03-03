@@ -33,3 +33,4 @@
 .\objects\st7735.o: ..\driver\st7735\st7735.h
 .\objects\st7735.o: ..\driver\st7735\stfonts.h
 .\objects\st7735.o: ..\driver\delay.h
+.\objects\st7735.o: D:\Software\Keil5\ARM\ARMCC\Bin\..\include\stddef.h

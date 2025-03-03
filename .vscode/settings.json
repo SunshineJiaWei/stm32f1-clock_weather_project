@@ -19,6 +19,7 @@
         "stimage.h": "c",
         "stdio.h": "c",
         "delay.h": "c",
-        "cstdlib": "c"
+        "cstdlib": "c",
+        "rtc.h": "c"
     }
 }
