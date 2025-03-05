@@ -13,9 +13,12 @@ typedef struct {
     const uint32_t count;
 } st_fonts_t;
 
-
 extern st_fonts_t st_font_ascii_8x16;
-extern st_fonts_t font_time_25x25;
+extern st_fonts_t font_temper_16x32;
+extern st_fonts_t font_time_24x48;
+
+extern st_fonts_t st_font_temper_8x16;
+extern st_fonts_t self_font_temper_16x32;
 
 
 #endif      /*__ST_FONTS_H*/

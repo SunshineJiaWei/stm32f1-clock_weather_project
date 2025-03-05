@@ -35,6 +35,7 @@ void st7735_fill_rect(uint16_t x, uint16_t y, uint16_t w, uint16_t h, uint16_t c
 void st7735_fill_screen(uint16_t color);
 void st7735_write_char(uint16_t x, uint16_t y, char ch, st_fonts_t *font, uint16_t color, uint16_t bgcolor);
 void st7735_write_string(uint16_t x, uint16_t y, const char *str, st_fonts_t *font, uint16_t color, uint16_t bgcolor);
+void st7735_draw_image(uint16_t x, uint16_t y, uint16_t w, uint16_t h, const uint8_t *data);
 
 
 #endif      /*__ST7735_H*/

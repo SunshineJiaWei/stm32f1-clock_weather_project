@@ -39,3 +39,5 @@
 .\objects\main.o: ..\driver\timer.h
 .\objects\main.o: ..\driver\delay.h
 .\objects\main.o: ..\app\weather.h
+.\objects\main.o: ..\driver\mpu6050\mpu6050.h
+.\objects\main.o: ..\driver\st7735\stimage.h

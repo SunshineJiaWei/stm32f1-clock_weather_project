@@ -339,7 +339,7 @@
               <MiscControls></MiscControls>
               <Define>USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>..\app;..\driver;..\firmware\cmsis\core;..\firmware\cmsis\device;..\firmware\driver\inc;..\driver\esp-at;..\driver\st7735</IncludePath>
+              <IncludePath>..\app;..\driver;..\firmware\cmsis\core;..\firmware\cmsis\device;..\firmware\driver\inc;..\driver\esp-at;..\driver\st7735;..\driver\mpu6050</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -412,6 +412,46 @@
               <FileName>weather.h</FileName>
               <FileType>5</FileType>
               <FilePath>..\app\weather.h</FilePath>
+            </File>
+            <File>
+              <FileName>font_temper_32.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\app\font_temper_32.c</FilePath>
+            </File>
+            <File>
+              <FileName>font_time_48.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\app\font_time_48.c</FilePath>
+            </File>
+            <File>
+              <FileName>icon_weather_duoyun.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\app\icon\icon_weather_duoyun.c</FilePath>
+            </File>
+            <File>
+              <FileName>icon_weather_feng.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\app\icon\icon_weather_feng.c</FilePath>
+            </File>
+            <File>
+              <FileName>icon_weather_qing.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\app\icon\icon_weather_qing.c</FilePath>
+            </File>
+            <File>
+              <FileName>icon_weather_xue.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\app\icon\icon_weather_xue.c</FilePath>
+            </File>
+            <File>
+              <FileName>icon_weather_yin.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\app\icon\icon_weather_yin.c</FilePath>
+            </File>
+            <File>
+              <FileName>icon_weather_yu.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\app\icon\icon_weather_yu.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -499,9 +539,29 @@
               <FilePath>..\driver\timer.h</FilePath>
             </File>
             <File>
-              <FileName>font_time_25.c</FileName>
+              <FileName>mpu6050.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\driver\st7735\font_time_25.c</FilePath>
+              <FilePath>..\driver\mpu6050\mpu6050.c</FilePath>
+            </File>
+            <File>
+              <FileName>mpu6050.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\driver\mpu6050\mpu6050.h</FilePath>
+            </File>
+            <File>
+              <FileName>swi2c.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\driver\mpu6050\swi2c.c</FilePath>
+            </File>
+            <File>
+              <FileName>swi2c.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\driver\mpu6050\swi2c.h</FilePath>
+            </File>
+            <File>
+              <FileName>stimage.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\driver\st7735\stimage.h</FilePath>
             </File>
           </Files>
         </Group>

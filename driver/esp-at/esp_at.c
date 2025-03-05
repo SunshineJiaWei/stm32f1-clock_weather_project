@@ -148,7 +148,7 @@ bool esp_at_sntp_init(void)
     return true;
 }
 
-bool esp_at_http_get(const char* url, const char** rsp, uint32_t *length, uint32_t timeout)
+bool esp_at_get_http(const char* url, const char** rsp, uint32_t *length, uint32_t timeout)
 {
     char cmd[128];
     snprintf(cmd, sizeof(cmd), "AT+HTTPCGET=\"%s\"", url);
@@ -160,7 +160,7 @@ bool esp_at_http_get(const char* url, const char** rsp, uint32_t *length, uint32
     return true;
 }
 
-bool esp_at_time_get(uint32_t *timestamp)
+bool esp_at_get_time(uint32_t *timestamp)
 {
     const char *esp;
 
@@ -176,5 +176,7 @@ bool esp_at_time_get(uint32_t *timestamp)
 
     return true;
 }
+
+
 
 

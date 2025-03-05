@@ -4,8 +4,10 @@
             "name": "stm32",
             "includePath": [
                 "app",
-                "driver/**",
+                "driver",
                 "driver/esp-at",
+                "driver/st7735",
+                "driver/mpu6050",
                 "firmware/cmsis/core",
                 "firmware/cmsis/device",
                 "firmware/driver/inc"

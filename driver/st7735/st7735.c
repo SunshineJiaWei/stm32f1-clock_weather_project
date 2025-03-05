@@ -267,7 +267,7 @@ static const uint8_t* st7735_find_font(const st_fonts_t *font, char ch)
             return pcode + 1;
         }
     }
-	
+
     return NULL;
 }
 
@@ -326,4 +326,16 @@ void st7735_write_string(uint16_t x, uint16_t y, const char *str, st_fonts_t *fo
         x += font->width;
         str ++;
     }
+}
+
+void st7735_draw_image(uint16_t x, uint16_t y, uint16_t w, uint16_t h, const uint8_t *data)
+{
+    if(x >= ST7735_WIDTH || y >= ST7735_HEIGHT) return;
+    if((x + w - 1) >= ST7735_WIDTH) return;
+    if((y + h - 1) >= ST7735_HEIGHT) return;
+
+    st7735_select();
+    st7735_set_window(x, y, x + w - 1, y + h - 1);
+    st7735_write_data((uint8_t*)data, w * h * 2);
+    st7735_unselect();
 }
